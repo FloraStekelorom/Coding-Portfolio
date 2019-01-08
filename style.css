@@ -1,3 +1,31 @@
-h1 {
-  color: red;
+.logo {
+  width: 18%;
+}
+
+.logo:hover {
+  filter: brightness(50%);
+}
+
+.nav-text:hover {
+  color: rgb(108, 108, 108);
+}
+
+#md-navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#logo-xs-screen {
+  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  #logo-xs-screen,
+  #navbarmenu {
+    display: none !important;
+  }
+}
+
+#navbarmenu {
+  min-width: 135px;
 }
