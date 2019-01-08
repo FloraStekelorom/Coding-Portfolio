@@ -8,12 +8,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- CSS sheet -->
     <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Title -->
     <title>Flora Portfolio</title>
   </head>
   <body>
-    <nav>
-
+    <nav class="navbar navbar-expand-md bg-dark fixed-top">
+      <!-- Navbar for Medium to XL screens -->
+      <div class="d-none d-md-flex flex-grow-1" id="md-navbar">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="./images/logo.png" alt="logo">
+        </a>
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link text-white" href="index.html"><div class="px-2 nav-text">Home</div></a>
+          <a class="nav-item nav-link text-white" href="#"><div class="px-2 nav-text">Services</div></a>
+          <a class="nav-item nav-link text-white" href="#"><div class="px-2 nav-text">Portfolio</div></a>
+          <a class="nav-item nav-link text-white" href="#"><div class="px-2 nav-text">Contact</div></a>
+        </div>
+      </div>
+      <!-- Navbar for XS and Small screens -->
+      <a class="navbar-brand" href="#" id="logo-xs-screen"><img class="logo" src="./images/logo.png" alt="logo"></a>
+      <div class="btn-group dropleft">
+        <button class="navbar-toggler collapsed" role="button" data-toggle="collapse" href="#navbarmenu" aria-expanded="true">
+          <span class="text-white"><i class="fas fa-bars nav-text"></i></span>
+        </button>
+        <div class="collapse navbar-collapse dropdown-menu bg-dark" id="navbarmenu">
+          <a class="nav-item nav-link text-white text-right" href="index.html"><div class="nav-text">Home</div></a>
+          <a class="nav-item nav-link text-white text-right" href="#"><div class="nav-text">Services</div></a>
+          <a class="nav-item nav-link text-white text-right" href="#"><div class="nav-text">Portfolio</div></a>
+          <a class="nav-item nav-link text-white text-right" href="#"><div class="nav-text">Contact</div></a>
+        </div>
+      </div>
     </nav>
     <main>
 
