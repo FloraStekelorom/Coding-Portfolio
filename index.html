@@ -14,16 +14,16 @@
     <title>Flora Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md fixed-top" id="navbar-background">
       <!-- Navbar for Medium to XL screens -->
       <div class="d-none d-md-flex flex-grow-1" id="md-navbar">
         <a class="navbar-brand" href="index.html"><img class="logo" src="./images/logo.png" alt="logo">
         </a>
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link text-white" href="index.html"><div class="px-2 nav-text">Home</div></a>
-          <a class="nav-item nav-link text-white" href="#"><div class="px-2 nav-text">Services</div></a>
-          <a class="nav-item nav-link text-white" href="#"><div class="px-2 nav-text">Portfolio</div></a>
-          <a class="nav-item nav-link text-white" href="#"><div class="px-2 nav-text">Contact</div></a>
+          <a class="nav-item nav-link text-white" href="#Home"><div class="px-2 nav-text">Home</div></a>
+          <a class="nav-item nav-link text-white" href="#Services"><div class="px-2 nav-text">Services</div></a>
+          <a class="nav-item nav-link text-white" href="#Portfolio"><div class="px-2 nav-text">Portfolio</div></a>
+          <a class="nav-item nav-link text-white" href="#Contact"><div class="px-2 nav-text">Contact</div></a>
         </div>
       </div>
       <!-- Navbar for XS and Small screens -->
@@ -33,15 +33,33 @@
           <span class="text-white"><i class="fas fa-bars nav-text"></i></span>
         </button>
         <div class="collapse navbar-collapse dropdown-menu bg-dark" id="navbarmenu">
-          <a class="nav-item nav-link text-white text-right" href="index.html"><div class="nav-text">Home</div></a>
-          <a class="nav-item nav-link text-white text-right" href="#"><div class="nav-text">Services</div></a>
-          <a class="nav-item nav-link text-white text-right" href="#"><div class="nav-text">Portfolio</div></a>
-          <a class="nav-item nav-link text-white text-right" href="#"><div class="nav-text">Contact</div></a>
+          <a class="nav-item nav-link text-white text-right" href="#Home"><div class="nav-text">Home</div></a>
+          <a class="nav-item nav-link text-white text-right" href="#Services"><div class="nav-text">Services</div></a>
+          <a class="nav-item nav-link text-white text-right" href="Portfolio"><div class="nav-text">Portfolio</div></a>
+          <a class="nav-item nav-link text-white text-right" href="#Contact"><div class="nav-text">Contact</div></a>
         </div>
       </div>
     </nav>
-    <main>
-
+    <main class="main-padding">
+      <!-- Home Content -->
+      <div class="position-relative" id="home">
+        <div class="container-fluid position-absolute" id="biography">
+          <h1 class="text-white" id="name">Flora Hewitt</h1>
+          <h3 class="text-white" id="job">Full Stack Developer</h3>
+        </div>
+      </div>
+      <!-- Services Content -->
+      <div id="services">
+        <h1>Services</h1>
+      </div>
+      <!-- Portfolio Content -->
+      <div id="portfolio">
+        <h1>Portfolio</h1>
+      </div>
+      <!-- Contact Content -->
+      <div id="contact">
+        <h1>Contact</h1>
+      </div>
     </main>
     <footer>
 
