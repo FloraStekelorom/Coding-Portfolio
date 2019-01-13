@@ -20,46 +20,119 @@
         <a class="navbar-brand" href="index.html"><img class="logo" src="./images/logo.png" alt="logo">
         </a>
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link text-white" href="#Home"><div class="px-2 nav-text">Home</div></a>
+          <a class="nav-item nav-link text-white" href="#home"><div class="px-2 nav-text">Home</div></a>
           <a class="nav-item nav-link text-white" href="#Services"><div class="px-2 nav-text">Services</div></a>
           <a class="nav-item nav-link text-white" href="#Portfolio"><div class="px-2 nav-text">Portfolio</div></a>
           <a class="nav-item nav-link text-white" href="#Contact"><div class="px-2 nav-text">Contact</div></a>
         </div>
       </div>
       <!-- Navbar for XS and Small screens -->
-      <a class="navbar-brand" href="#" id="logo-xs-screen"><img class="logo" src="./images/logo.png" alt="logo"></a>
+      <a class="navbar-brand" href="#home" id="logo-xs-screen"><img class="logo" src="./images/logo.png" alt="logo"></a>
       <div class="btn-group dropleft">
         <button class="navbar-toggler collapsed" role="button" data-toggle="collapse" href="#navbarmenu" aria-expanded="true">
           <span class="text-white"><i class="fas fa-bars nav-text"></i></span>
         </button>
         <div class="collapse navbar-collapse dropdown-menu bg-dark" id="navbarmenu">
-          <a class="nav-item nav-link text-white text-right" href="#Home"><div class="nav-text">Home</div></a>
-          <a class="nav-item nav-link text-white text-right" href="#Services"><div class="nav-text">Services</div></a>
-          <a class="nav-item nav-link text-white text-right" href="Portfolio"><div class="nav-text">Portfolio</div></a>
-          <a class="nav-item nav-link text-white text-right" href="#Contact"><div class="nav-text">Contact</div></a>
+          <a class="nav-item nav-link text-white text-right" href="#home"><div class="nav-text">Home</div></a>
+          <a class="nav-item nav-link text-white text-right" href="#services"><div class="nav-text">Services</div></a>
+          <a class="nav-item nav-link text-white text-right" href="#portfolio"><div class="nav-text">Portfolio</div></a>
+          <a class="nav-item nav-link text-white text-right" href="#contact"><div class="nav-text">Contact</div></a>
         </div>
       </div>
     </nav>
-    <main class="main-padding">
+    <main class="main-background">
       <!-- Home Content -->
-      <div class="position-relative" id="home">
-        <div class="container-fluid position-absolute" id="biography">
+      <div id="home">
+        <div class="container-fluid" id="biography">
           <h1 class="text-white" id="name">Flora Hewitt</h1>
           <h3 class="text-white" id="job">Full Stack Developer</h3>
         </div>
       </div>
+
       <!-- Services Content -->
       <div id="services">
-        <h1>Services</h1>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div>
+                <h1 class="text-center text-white section-title">Services</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="service">
+                <div class="aspectRatioBox position-relative">
+                  <div class="position-absolute w-100 h-100 overlay">
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front text-center text-white" id="front-web-design">
+                          <div class="w-100 h-100 d-flex flex-column justify-content-center text-center overlay1">
+                            <span class="service-title">Web Design</span>
+                          </div>
+                        </div>
+                        <div class="flip-box-back text-center text-white" id="back-web-design">
+                          <div class="w-100 h-100 d-flex flex-column justify-content-center text-center overlay2">
+                            <span class="service-title">Web Design</span>
+                            <span class="service-description px-3">I help clients with the design of their website and advice them on several topics from webpage layout and content production to graphic design.</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="service">
+                <div class="aspectRatioBox position-relative">
+                  <div class="position-absolute w-100 h-100 overlay">
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front text-center text-white" id="front-web-development">
+                          <div class="w-100 h-100 d-flex flex-column justify-content-center text-center overlay1">
+                            <span class="service-title">Web Development</span>
+                          </div>
+                        </div>
+                        <div class="flip-box-back text-center text-white" id="back-web-development">
+                          <div class="w-100 h-100 d-flex flex-column justify-content-center text-center overlay2">
+                            <span class="service-title">Web Development</span>
+                            <span class="service-description px-3">I also help clients make their website functional by programming it in several different languages including HTML, CSS, Javascript and PHP.</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="service">
+                <div class="aspectRatioBox position-relative">
+                  <div class="position-absolute w-100 h-100 overlay">
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front text-center text-white" id="front-user-experience">
+                          <div class="w-100 h-100 d-flex flex-column justify-content-center text-center overlay1">
+                            <span class="service-title">User Experience</span>
+                          </div>
+                        </div>
+                        <div class="flip-box-back text-center text-white" id="back-user-experience">
+                          <div class="w-100 h-100 d-flex flex-column justify-content-center text-center overlay2">
+                            <span class="service-title">User Experience</span>
+                            <span class="service-description px-3">While building websites, I put myself into the shoes of the user and make sure that the overall user experience is smooth, unique and intuitive.</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Portfolio Content -->
-      <div id="portfolio">
-        <h1>Portfolio</h1>
-      </div>
-      <!-- Contact Content -->
-      <div id="contact">
-        <h1>Contact</h1>
-      </div>
+      <hr class="horizontal-line"/>
     </main>
     <footer>
 
