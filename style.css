@@ -45,10 +45,155 @@
 }
 
 #biography {
-  top: 150px;
-  left: 50px;
+  padding-top: 150px;
+  padding-left: 50px;
 }
 
+/* Services Section */
+
+#services {
+  background-color: rgb(19, 25, 25);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.section-title {
+  padding-top: 30px;
+  font-size: 30px;
+}
+
+.aspectRatioBox {
+  padding-top: calc(2 / 3 * 100%);
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.overlay {
+  top: 0;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
+}
+
+#front-web-design,
+#back-web-design {
+  background-image: url('./images/web-design.jpg');
+}
+
+#front-web-development,
+#back-web-development {
+  background-image: url('./images/web-development.jpg');
+}
+
+#front-user-experience,
+#back-user-experience {
+  background-image: url('./images/user-experience.jpg');
+}
+
+.overlay1 {
+  top: 0;
+  background-color: rgba(118, 118, 118, 0.3);
+}
+
+.overlay2 {
+  top: 0;
+  background-color: rgba(118, 118, 118, 0.7);
+}
+
+.service-title {
+  font-size: 25px;
+}
+
+.service-description {
+  font-size: 15px;
+}
+
+/* Portfolio Section */
+
+#portfolio {
+  background-color: rgb(19, 25, 25);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.aspectRatioBox2 {
+  padding-top: calc(2 / 3 * 100%);
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#website1,
+#website2,
+#website3,
+#website4,
+#website5,
+#website6,
+#website7,
+#website8,
+#website9 {
+  background-color: rgb(108, 108, 108);
+}
+
+#website1:hover,
+#website2:hover,
+#website3:hover,
+#website4:hover,
+#website5:hover,
+#website6:hover,
+#website7:hover,
+#website8:hover,
+#website9:hover {
+  border: 1px solid white;
+}
+
+/* Media Queries */
 
 @media (max-width: 575px) {
   #home {
@@ -61,8 +206,8 @@
     font-size: 18px;
   }
   #biography {
-    left: 30px;
-    top: 100px;
+    padding-top: 100px;
+    padding-left: 25px;
   }
 }
 
@@ -77,8 +222,8 @@
     font-size: 23px;
   }
   #biography {
-    left: 35px;
-    top: 120px;
+    padding-top: 110px;
+    padding-left: 35px;
   }
 }
 
@@ -98,4 +243,16 @@
   #home {
     height: 770px;
   }
+}
+
+/* Others */
+
+.main-background {
+  background-color: rgb(19, 25, 25);
+}
+
+.horizontal-line {
+  margin-left: 300px;
+  margin-right: 300px;
+  border: 1px solid white;
 }
