@@ -193,6 +193,12 @@
   border: 1px solid white;
 }
 
+.website-description {
+  font-size: 12px;
+  line-height: 0.5em;
+  margin-top: -10px;
+}
+
 /* Media Queries */
 
 @media (max-width: 575px) {
