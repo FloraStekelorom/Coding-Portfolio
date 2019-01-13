@@ -49,6 +49,26 @@
   padding-left: 50px;
 }
 
+/* Contact Section */
+
+.contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button-contact-section {
+  background-color: rgb(108, 108, 108);
+}
+
+.contact-button {
+  color: rgb(255, 255, 255);
+}
+
+.contact-button:hover {
+  text-decoration: none;
+  filter: brightness(50%);
+}
+
 /* Services Section */
 
 #services {
@@ -199,26 +219,57 @@
   margin-top: -10px;
 }
 
-/* Contact Section */
+/* About Section */
 
-.contact {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
+#about {
+  background-color: rgb(19, 25, 25);
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.button-contact-section {
-  background-color: rgb(108, 108, 108);
-  align-items: center;
+.about-photo {
+  text-align: right;
+  margin-top: 30px;
 }
 
-.contact-button {
-  color: rgb(255, 255, 255);
+#photo-me {
+  height: 330px;
+  width: auto;
 }
 
-.contact-button:hover {
-  text-decoration: none;
-  filter: brightness(50%);
+.biography {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.me-description {
+  font-size: 15px;
+}
+
+.linkedin-contact {
+  color: rgb(108, 108, 108);
+}
+
+.linkedin-contact:hover {
+  color: rgb(180, 180, 180);
+}
+
+/* footer */
+
+#footer {
+  background-color: rgb(19, 25, 25);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.footer-div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 12px;
 }
 
 /* Others */
@@ -251,6 +302,13 @@
     margin-left: 100px;
     margin-right: 100px;
   }
+  .about-photo {
+    text-align: center;
+  }
+  .title,
+  .me-description {
+    text-align: center;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -270,6 +328,13 @@
   .horizontal-line {
     margin-left: 100px;
     margin-right: 100px;
+  }
+  .about-photo {
+    text-align: center;
+  }
+  .title,
+  .me-description {
+    text-align: center;
   }
 }
 
